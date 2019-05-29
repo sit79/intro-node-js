@@ -5,10 +5,12 @@
   "author": "Scott Moss <willscottmoss@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "husky": "^2.3.0",
     "jest": "^23.6.0"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint --fix ."
   },
   "dependencies": {
     "body-parser": "^1.18.3",

@@ -1,25 +1,25 @@
-const data = require('./data')
-const api = require('./api')
-const app = require('./app')
+const data = require("./data")
+const api = require("./api")
+const app = require("./app")
 
-describe('data', () => {
-  test('users',  () => {
+describe("data", () => {
+  test("users",  () => {
     expect(data.users).toHaveLength(1)
   })
-  test('posts', () => {
+  test("posts", () => {
     expect(data.posts).toHaveLength(3)
   })
 })
 
-describe('api', () => {
-  test('getUserById', done => {
+describe("api", () => {
+  test("getUserById", done => {
     expect.assertions(1)
     api.getUserById(1, user => {
       expect(user.id).toBe(1)
       done()
     })
   })
-  test('getPostsForUser', done => {
+  test("getPostsForUser", done => {
     api.getPostsForUser(1, posts => {
       expect(posts).toHaveLength(3)
       posts.forEach(post => {
@@ -30,15 +30,15 @@ describe('api', () => {
   })
 })
 
-describe('app', () => {
-  test('showPostsForCurrentUser', done => {
+describe("app", () => {
+  test("showPostsForCurrentUser", done => {
     app.showPostsForCurrentUser(1, posts => {
       expect(posts).toHaveLength(3)
       done()
     })
   })
 
-  test('showUserProfile', done => {
+  test("showUserProfile", done => {
     app.showUserProfile(1, profile => {
       expect(profile).toBeTruthy()
       done()
