@@ -1,7 +1,22 @@
 {
-  "adfsadf asfdasdf": {
-    "firstName": "adfsadf",
-    "lastName": "asfdasdf",
-    "phoneNumber": "asfdsf"
+  "Stefan Tolksdorf": {
+    "firstName": "Stefan",
+    "lastName": "Tolksdorf",
+    "phoneNumber": "+491772682195"
+  },
+  "Elodie Viennot": {
+    "firstName": "Elodie",
+    "lastName": "Viennot",
+    "phoneNumber": "+491782626750"
+  },
+  "Terka Danja": {
+    "firstName": "Terka",
+    "lastName": "Danja",
+    "phoneNumber": "123"
+  },
+  "Sabine Tolksdorf": {
+    "firstName": "Sabine",
+    "lastName": "Tolksdorf",
+    "phoneNumber": "030 50173908"
   }
 }
